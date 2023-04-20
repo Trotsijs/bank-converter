@@ -4,8 +4,6 @@ require_once 'vendor/autoload.php';
 
 use App\Converter;
 
-// https://www.latvijasbanka.lv/vk/ecb.xml
-
 $amount = (float) readline('Please enter amount you want to convert: ');
 $toCurrency = strtoupper(readline('Please enter currency to convert to: '));
 
