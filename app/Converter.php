@@ -13,15 +13,15 @@ class Converter
 
     function convert(float $amount, string $toCurrency)
     {
-        $xmlData = $this->client->getData();
         $output = 0;
+        $xmlData = $this->client->getData();
         foreach ($xmlData->Currencies->Currency as $currency) {
             if ($currency->ID == $toCurrency) {
                 $output = $currency->Rate * $amount;
             }
         }
-        return $output;
 
+        return $output;
     }
 
 }
