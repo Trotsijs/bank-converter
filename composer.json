@@ -12,6 +12,8 @@
         }
     ],
     "require": {
-        "guzzlehttp/guzzle": "^7.5"
+        "guzzlehttp/guzzle": "^7.5",
+        "ext-readline": "*",
+        "ext-simplexml": "*"
     }
 }
