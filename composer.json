@@ -1,0 +1,17 @@
+{
+    "name": "trotsijs/bank-converter",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Trotsijs",
+            "email": "trotsijs@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.5"
+    }
+}
