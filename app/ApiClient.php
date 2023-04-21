@@ -3,6 +3,7 @@
 namespace App;
 
 use GuzzleHttp\Client;
+use SimpleXMLElement;
 
 class ApiClient
 {
@@ -13,7 +14,7 @@ class ApiClient
         $this->client = new Client;
     }
 
-    public function getData()
+    public function getData(): SimpleXMLElement
     {
         $url = 'https://www.latvijasbanka.lv/vk/ecb.xml';
         $response = $this->client->request('GET', $url);
